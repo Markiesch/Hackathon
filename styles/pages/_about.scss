@@ -1,28 +1,21 @@
-.fotoSection
-{
-    width: 100%;
-    margin: 0 auto;
+
+img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  padding-top: 30px;
 }
-img
-{
-    height: 400px;
-    width: 100%;
-    object-fit: cover;
-    padding-top: 30px;
-    
+
+.titel {
+  color: black;
+  font-size: 40px;
 }
-.titel
-{
-    color: black;
-    font-size: 40px;
+
+p {
+  padding-top: 2rem;
 }
-p
-{
-    padding-top: 30px;
-   
-}
-.container
-{
-    width: 80%;
-    margin: 0 auto;
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
