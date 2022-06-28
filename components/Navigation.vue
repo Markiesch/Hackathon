@@ -4,8 +4,8 @@
       <li class="nav__title">Servicez</li>
       <li class="nav__item">Over Ons</li>
       <li class="nav__item">Cocktails</li>
-      <li class="nav__item">Nieuws</li>
-      <li class="nav_login">Login</li>
+      <li class="nav__item"><a href="">Nieuws</a></li>
+      <li class="nav_login"><a href="">Login</a></li>
     </ul>
   </nav>
 </template>
