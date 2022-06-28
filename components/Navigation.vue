@@ -1,11 +1,11 @@
 <template>
 <nav class="nav">
     <ul>
-      <li class="nav__title">Servicez</li>	
-      <li class="nav__item">Over Ons</li>
+      <li  class="nav__title"><a href="pages/index.vue">Servicez</a></li>	
+      <li  class="nav__item"><a href="pages/about.vue">Over Ons</a></li>
       <li class="nav__item">Cocktails</li>
-      <li class="nav__item">Nieuws</li>
-      <li class="nav_login">Login</li>
+      <li class="nav__item"><a href="">Nieuws</a></li>
+      <li class="nav_login"><a href="">Login</a></li>
     </ul>
     
   </nav>

@@ -8,7 +8,7 @@
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
         Iure ex tempora qui. <br> Velit architecto, deserunt, autem porro,
-        dolor provident 
+        dolor provident jatoch
       </p>
       <div>
         <button class="overzicht">Overzicht</button>
