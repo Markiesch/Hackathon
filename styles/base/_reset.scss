@@ -31,3 +31,10 @@ textarea,
 select {
   font-family: inherit;
 }
+
+section,
+nav {
+  width: 90%;
+  max-width: 90rem;
+  margin: 0 auto;
+}

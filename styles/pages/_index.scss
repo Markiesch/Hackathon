@@ -1,86 +1,57 @@
-/* Nav - Badr */
-.nav {
-	position: sticky;
-	display: flex;
-	align-items: center;
-	height: 60px;
-	top: 0;
-}
-.nav {
-	background: rgb(255, 255, 255);
-    border-bottom: 1px solid black;
-
-	&__title {
-		margin: 0px 30px;
-        position: relative;
-        top: 25px; 
-        list-style-type: none;
-        font-weight: bolder;
-	}
-	&__item {
-		display: inline-block;
-		margin: 0px 30px;
-        position: relative;
-        left: 120%;
-	}   
-    
-}
-
-
-// Nav einde - Badr
-
-.learnMore
-{
-    margin: 1%;
-
-}
 // Section Begin - Badr
 
-section
-{
-    width: 40%;
+.learnMore {
+  margin: 1%;
 }
-.sectionFoto
-{   
-    float: right;
-   width: 420px;
-   height: 500px;
-   margin-left: 30px
-}
-.sectionText
-{
-    margin-top: 150px;
-    margin-left: 100px;
-    float: left;
-}
-section h2
-{
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  & > div {
+    flex: 1 1 30rem;
+  }
+
+  h1 {
     font-size: 60px;
-}// Section Einde - Badr
+    line-height: 1.1;
+    font-weight: 800;
+  }
 
-// Buttons index - Badr
-.overzicht
-{
-    width: 4cm;
-    height: 1cm;
-    background-color: black;
-    color: white;
-}
-.learnMore
-{
-    width: 4cm;
-    height: 1cm;
-    background-color: white;
-    color: black;
-    border: 3px solid black;
-}
-main section div, main section p
-{
-    margin-top: 30px;
-}
+  p {
+    margin: 1.5rem 0 1rem 0;
+  }
 
-img {
+  img {
     height: 100%;
     width: 100%;
     margin-top: 100px;
-  } 
+  }
+}
+
+// Section Einde - Badr
+
+// Buttons index - Badr
+a {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.5rem 0.75rem;
+}
+
+.cta--overview {
+  background-color: black;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.cta--learn-more {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 50rem) {
+  section {
+    text-align: center;
+  }
+}
