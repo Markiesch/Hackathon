@@ -2,9 +2,11 @@
   <nav class="nav">
     <ul>
       <li class="nav__title">Servicez</li>
-      <li class="nav__item">Over Ons</li>
-      <li class="nav__item">Cocktails</li>
-      <li class="nav__item"><a href="">Nieuws</a></li>
+      <div>
+        <li class="nav__item">Over Ons</li>
+        <li class="nav__item">Cocktails</li>
+        <li class="nav__item"><a href="">Nieuws</a></li>
+      </div>
       <li class="nav_login"><a href="">Login</a></li>
     </ul>
   </nav>
@@ -12,32 +14,33 @@
 
 <style lang="scss" scoped>
 .nav {
-  position: sticky;
-  display: flex;
-  align-items: center;
-  height: 60px;
-  top: 0;
-}
-.nav {
   background: rgb(255, 255, 255);
+  height: 4rem;
+  top: 0;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
   &__title {
-    margin: 0px 30px;
-    position: relative;
     top: 25px;
     list-style-type: none;
     font-weight: bolder;
   }
+
   &__item {
     display: inline-block;
-    margin: 0px 30px;
-    position: relative;
-    left: 120%;
+    margin: 1rem;
   }
 }
+
 .nav_login {
-  margin: 0px 30px;
-  position: relative;
-  left: 220%;
   display: inline-block;
 }
 </style>
