@@ -20,3 +20,7 @@
     <NuxtPage />
   </div>
 </template>
+
+<style lang="scss">
+@use "@/styles/base/reset";
+</style>
