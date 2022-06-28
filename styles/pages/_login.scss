@@ -1,0 +1,56 @@
+section {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+form {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+p {
+  padding-bottom: 2rem;
+}
+
+button,
+input {
+  width: 100%;
+  display: block;
+}
+
+.button--login {
+  margin-top: 3em;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  transition: background-color 300ms ease, color 300ms ease;
+  display: block;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.button--back {
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
