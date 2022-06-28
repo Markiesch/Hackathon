@@ -1,4 +1,6 @@
-section {
+@use "../abstract/variables" as *;
+
+.container {
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr 1fr;
@@ -19,22 +21,38 @@ form {
   margin: 0 auto;
 }
 
-p {
-  padding-bottom: 2rem;
-}
-
 button,
 input {
   width: 100%;
   display: block;
 }
 
+label {
+  color: $clr-neutral-400;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+input {
+  background-color: white;
+  border: 1px solid #e1e8f2;
+  padding: 0.5em;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+
+  &:focus {
+    border-color: $clr-primary-400;
+    outline: none;
+  }
+}
+
 .button--login {
   margin-top: 3em;
   cursor: pointer;
-  background-color: black;
+  background-color: $clr-primary-400;
+  border: none;
   color: white;
-  padding: 0.5em 2em;
+  padding: 0.75em 2em;
   font-size: 16px;
   border-radius: 0.25rem;
   transition: background-color 300ms ease, color 300ms ease;

@@ -1,38 +1,24 @@
 <script setup lang="ts">
-import events from "@/data/events";
+const { data: events } = await useFetch("/api/events");
+
+definePageMeta({
+  layout: "admin",
+});
 </script>
 
 <template>
-  <div class="container">
-    <Sidebar />
-    <div class="content">
-      <div>overview</div>
-      <div class="card--container">
-        <div class="card" v-for="event in events">
-          <h2 class="card--title">{{ event.name }}</h2>
-          <p class="card--text">{{ event.description }}</p>
-          <button @click="event.test = !event.test">{{ event.test }}</button>
-        </div>
+  <div>
+    <div>Evenementen</div>
+    <div class="card--container">
+      <div class="card" v-for="event in events">
+        <h2 class="card--title">{{ event.name }}</h2>
+        <p class="card--text">{{ event.description }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.content {
-  padding: 4rem;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  min-height: 100vh;
-
-  & > * {
-    height: 100%;
-  }
-}
-
 .card--container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
