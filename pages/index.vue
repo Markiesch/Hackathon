@@ -1,14 +1,5 @@
 <template>
-  <nav class="nav">
-    <ul>
-      <li class="nav__title">Servicez</li>	
-      <li class="nav__item">Over Ons</li>
-      <li class="nav__item">Cocktails</li>
-      <li class="nav__item">Nieuws</li>
-      <li class="nav_login">Login</li>
-    </ul>
-    
-  </nav>
+  <Navigation></Navigation>
   <main>
     <section class="sectionText">
       <h2>
@@ -24,11 +15,10 @@
         <button class="learnMore">Learn More</button>
         
       </div>
-
-
     </section>
+
     <section class="sectionFoto">
-      <img src="public/hero.jpg">
+        <img src="public/hero.jpg">
     </section>
   </main>
 </template>
