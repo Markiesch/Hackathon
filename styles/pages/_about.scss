@@ -1,20 +1,23 @@
+@use "../abstract/variables" as *;
+
 img {
   height: 400px;
   width: 100%;
   object-fit: cover;
 }
 
-.titel {
+.title {
   color: black;
   padding-top: 1.5rem;
   font-size: 40px;
 }
 
 .container {
-  width: 80%;
+  max-width: 120ch;
   margin: 0 auto;
 }
 
 p {
+  color: $clr-neutral-400;
   padding-top: 1rem;
 }
