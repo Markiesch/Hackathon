@@ -1,0 +1,75 @@
+/* Nav - Badr */
+.nav {
+	position: sticky;
+	display: flex;
+	align-items: center;
+	height: 60px;
+	top: 0;
+}
+.nav {
+	background: rgb(255, 255, 255);
+	&__title {
+		margin: 0px 30px;
+        position: relative;
+        top: 25px; 
+        list-style-type: none;
+        font-weight: bolder;
+	}
+	&__item {
+		display: inline-block;
+		margin: 0px 30px;
+        position: relative;
+        left: 120%;
+	}   
+    
+}
+.nav_login { 
+    margin: 0px 30px;
+    position: relative;
+    left: 220%; 
+    display: inline-block;    
+}
+
+// Nav einde - Badr
+
+.learnMore
+{
+    margin: 1%;
+
+}
+// Section Begin - Badr
+
+section
+{
+    width: 50%;
+}
+.sectionText
+{
+    margin-top: 150px;
+    margin-left: 100px;
+}
+section h2
+{
+    font-size: 60px;
+}// Section Einde - Badr
+
+// Buttons index - Badr
+.overzicht
+{
+    width: 4cm;
+    height: 1cm;
+    background-color: black;
+    color: white;
+}
+.learnMore
+{
+    width: 4cm;
+    height: 1cm;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+}
+main section div, main section p
+{
+    margin-top: 30px;
+}
