@@ -16,9 +16,9 @@
     <Meta name="theme-color" content="#ffffff" />
   </Head>
 
-  <div>
+  <NuxtLayout>
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
 
 <style lang="scss">
