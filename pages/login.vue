@@ -5,10 +5,7 @@
     </div>
     <form>
       <h1>Login</h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam corporis voluptatem reprehenderit perspiciatis aspernatur ipsum quod esse earum veritatis, rem nam doloremque nostrum omnis
-        voluptates architecto. Voluptate officiis ipsam iste!
-      </p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam ipsam nesciunt architecto quibusdam harum animi.</p>
       <label for="username">Gebruikersnaam</label>
       <input type="text" id="username" />
       <label for="password">Wachtwoord</label>
