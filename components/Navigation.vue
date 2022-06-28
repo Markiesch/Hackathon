@@ -1,49 +1,27 @@
+<script setup lang="ts">
+const showMenu = ref(false);
+const toggleMenu = () => (showMenu.value = !showMenu.value);
+</script>
+
 <template>
-  <nav class="nav">
-    <ul>
-      <li class="nav__title">
-        <NuxtLink to="/">Servicez</NuxtLink>
-      </li>
+  <nav>
+    <NuxtLink to="/" class="logo">Eventz</NuxtLink>
+    <div class="link--container" :class="{ show: showMenu }">
       <div>
-        <li class="nav__item">
-          <NuxtLink to="/about">Over Ons</NuxtLink>
-        </li>
-        <li class="nav__item">Evenementen</li>
-        <li class="nav__item">
-          <NuxtLink to="/">Nieuws</NuxtLink>
-        </li>
+        <NuxtLink to="/">Home</NuxtLink>
+        <NuxtLink to="/about">Over ons</NuxtLink>
+        <NuxtLink to="/events">Evenementen</NuxtLink>
       </div>
-      <li class="nav_login"><a href="">Login</a></li>
-    </ul>
+      <div>
+        <NuxtLink to="/login">Login</NuxtLink>
+      </div>
+    </div>
+    <button aria-label="open menu" type="button" @click="toggleMenu" class="menu--icon__container">
+      <span class="menu--icon"></span>
+    </button>
   </nav>
 </template>
 
 <style lang="scss" scoped>
-.nav {
-  background: rgb(255, 255, 255);
-  height: 4rem;
-  top: 0;
-
-  ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-  }
-
-  &__title {
-    top: 25px;
-    list-style-type: none;
-    font-weight: bolder;
-  }
-
-  &__item {
-    display: inline-block;
-    margin: 1rem;
-  }
-}
-
-.nav_login {
-  display: inline-block;
-}
+@use "@/styles/layout/navigation";
 </style>
