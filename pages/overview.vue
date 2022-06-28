@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 div {
   display: grid;
   grid-template-columns: auto 1fr;
