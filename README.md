@@ -1,6 +1,19 @@
-# Nuxt 3 Minimal Starter
+<div align="center">
+    <a>
+        <img src="public/favicon.ico" alt="Logo" width="80" height="80" />
+    </a>
+    <h1>Eventz</h1>
+    <p>Together against loneliness - A project made during the Hackathon at Koning Willem I College.</p>
+    <a href="https://eventz.markschuurmans.nl/">View Website</a>
+    ·
+    <a href="https://github.com/Markiesch/Hackathon/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Markiesch/Hackathon/issues">Request Feature</a>
+</div>
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+<br />
+<br />
+<br />
 
 ## Setup
 
@@ -9,12 +22,6 @@ Make sure to install the dependencies:
 ```bash
 # yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
@@ -22,7 +29,7 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
@@ -30,13 +37,11 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+yarn build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+yarn preview
 ```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
