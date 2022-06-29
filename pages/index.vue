@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { events } from "~~/data/events";
+</script>
+
 <template>
   <div>
     <section class="hero">
@@ -23,6 +27,14 @@
           <img src="/hero5.png" alt="" />
         </div>
       </div>
+    </section>
+
+    <section class="event__section">
+      <h2>Evenementen</h2>
+      <div class="event__container">
+        <EventCard v-for="event in events.slice(0, 3)" :event="event" />
+      </div>
+      <NuxtLink to="/events">Bekijk alle evenementen</NuxtLink>
     </section>
   </div>
 </template>
