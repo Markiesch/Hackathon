@@ -11,19 +11,19 @@
       </div>
       <div class="image--container">
         <div>
-          <img src="hero1.png" alt="" />
+          <img src="/hero1.png" alt="" />
         </div>
         <div>
-          <img src="hero2.png" alt="" />
+          <img src="/hero2.png" alt="" />
         </div>
         <div>
-          <img src="hero3.png" alt="" />
+          <img src="/hero3.png" alt="" />
         </div>
         <div>
-          <img src="hero4.png" alt="" />
+          <img src="/hero4.png" alt="" />
         </div>
         <div>
-          <img src="hero5.png" alt="" />
+          <img src="/hero5.png" alt="" />
         </div>
       </div>
     </section>
