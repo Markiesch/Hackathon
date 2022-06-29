@@ -7,7 +7,7 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ex tempora qui. <br />
           Velit architecto, deserunt, autem porro, dolor provident jatoch
         </p>
-        <NuxtLink to="/overview" class="cta--overview">Overzicht</NuxtLink>
+        <NuxtLink to="/events" class="cta--overview">Overzicht</NuxtLink>
       </div>
       <div class="image--container">
         <div>

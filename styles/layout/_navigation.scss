@@ -8,6 +8,10 @@ nav {
   min-height: $nav-height;
 }
 
+.logo {
+  font-weight: 700;
+}
+
 .link--container {
   flex-grow: 1;
   display: flex;
