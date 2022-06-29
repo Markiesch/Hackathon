@@ -4,7 +4,7 @@ import { events } from "~~/data/events";
 
 <template>
   <section>
-    <h1>Evenementen</h1>
+    <Breadcrumbs>Evenementen</Breadcrumbs>
     <div class="card--container">
       <EventCard :event="event" class="card" v-for="event in events" />
     </div>

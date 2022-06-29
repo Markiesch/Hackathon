@@ -14,8 +14,8 @@ onMounted(() => {
   <div class="card">
     <img class="card__cover" :src="`/tours/${event.imageCover}`" alt="" />
     <div class="card__content">
-      <h2 class="card--title">{{ event.name }}</h2>
       <p class="card__date">{{ event.startDates[0] }}</p>
+      <h2 class="card--title">{{ event.name }}</h2>
       <p class="card__text">{{ event.summary }}</p>
 
       <div class="card__actions">
@@ -34,7 +34,7 @@ onMounted(() => {
   overflow: hidden;
 
   &__cover {
-    height: 12.5rem;
+    height: 15rem;
     width: 100%;
     object-fit: cover;
   }
@@ -47,12 +47,11 @@ onMounted(() => {
   }
 
   &__date {
-    background-color: #efefef;
+    background-color: #f5f5f5;
     width: max-content;
     font-size: 0.9rem;
-    padding: 0.75em 1em;
-    margin: 0.5rem 0 1rem 0;
-    border-radius: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
   }
 
   &__actions {
@@ -61,16 +60,18 @@ onMounted(() => {
   }
 
   h2 {
-    font-size: 1.25rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
   }
 
   &__text {
     color: $clr-neutral-400;
-    padding: 0rem 0 1.25rem 0;
+    padding: 0.75rem 0 1.5rem 0;
   }
 
   a {
     text-decoration: underline;
+    color: $clr-primary-400;
   }
 }
 </style>

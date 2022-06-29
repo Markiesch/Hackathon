@@ -1,21 +1,15 @@
 <script setup lang="ts">
 import { events } from "~~/data/events";
-
 const route = useRoute();
 
-const id = parseInt(<string>route.params.id);
-
-const event = events.find((event) => event.id === id);
-
+const event = events.find((event) => event.id === parseInt(<string>route.params.id));
 const joinedEvents = ref([]);
+const isLoaded = ref(false);
 
 onMounted(() => {
-  refreshLocalstorage();
-});
-
-function refreshLocalstorage() {
   joinedEvents.value = JSON.parse(localStorage.getItem("joinedEvents") ?? "[]");
-}
+  isLoaded.value = true;
+});
 
 function joinEvent(event) {
   joinedEvents.value.push(event.id);
@@ -35,13 +29,21 @@ function saveData() {
 
 <template>
   <section>
+    <Breadcrumbs>{{ event.name }}</Breadcrumbs>
     <img class="image__cover" :src="`/tours/${event.imageCover}`" alt="" />
-    <h1>{{ event.name }}</h1>
-    <h2>{{ event.summary }}</h2>
-    <p>{{ event.description }}</p>
+    <div class="container">
+      <h2>{{ event.summary }}</h2>
+      <p>{{ event.description }}</p>
 
-    <button v-if="joinedEvents.includes(event.id)" @click="leaveEvent(event)">Joined</button>
-    <button v-else @click="joinEvent(event)">Join {{ event.name }}</button>
+      <template v-if="isLoaded">
+        <button v-if="joinedEvents.includes(event.id)" @click="leaveEvent(event)">Uitschrijven voor {{ event.name }}!</button>
+        <button v-else @click="joinEvent(event)">Doe mee met {{ event.name }}</button>
+      </template>
+
+      <div class="image--container">
+        <img v-for="image in event.images" :src="`/tours/${image}`" />
+      </div>
+    </div>
   </section>
 </template>
 
@@ -56,28 +58,37 @@ function saveData() {
   object-fit: cover;
 }
 
-h1 {
-  padding: 2rem 0 1rem 0;
-  font-size: 2rem;
-}
-
 h2 {
-  font-size: 1.25rem;
+  font-size: $fontsize-500;
   color: $clr-neutral-800;
-  padding-bottom: 1rem;
+  padding: 2rem 0 1rem 0;
 }
 
 p {
   color: $clr-neutral-400;
   padding-bottom: 1rem;
 }
+
+.image--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem 0;
+
+  img {
+    display: block;
+    border-radius: 0.25rem;
+  }
+}
+
 button {
   border: none;
   background-color: $clr-primary-400;
   color: white;
   padding: 0.75rem 1rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 600;
   border-radius: 0.25rem;
+  margin: 1rem 0 2rem 0;
 }
 </style>

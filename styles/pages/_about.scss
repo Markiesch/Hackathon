@@ -4,20 +4,12 @@ img {
   height: 400px;
   width: 100%;
   object-fit: cover;
-}
-
-.title {
-  color: black;
-  padding-top: 1.5rem;
-  font-size: 40px;
-}
-
-.container {
-  max-width: 120ch;
-  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 p {
   color: $clr-neutral-400;
-  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  max-width: 120ch;
+  margin: 0 auto;
 }

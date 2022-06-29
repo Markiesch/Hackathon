@@ -1,9 +1,12 @@
 <template>
   <div>
+    <section>
+      <Breadcrumbs>Over ons</Breadcrumbs>
+    </section>
+
     <img src="/about.jpg" />
 
-    <div class="container">
-      <h1 class="title">Over Ons</h1>
+    <section>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur numquam maiores assumenda iusto obcaecati! Officia, beatae sapiente debitis rem quo doloremque atque mollitia, soluta
         possimus officiis voluptates sed eveniet nemo cumque odio fuga consequuntur nesciunt! Commodi maiores aliquam nostrum rem labore. Modi ad ab, quis eos officia eveniet ipsam debitis.
@@ -17,7 +20,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odio dolore. Quasi, cumque dignissimos. Ducimus sequi quae molestias expedita exercitationem minus placeat numquam illum
         assumenda, ex quaerat id minima distinctio sunt quos ut deserunt inventore est. Distinctio temporibus excepturi eius!
       </p>
-    </div>
+    </section>
   </div>
 </template>
 
