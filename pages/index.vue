@@ -36,6 +36,25 @@ import { events } from "~~/data/events";
       </div>
       <NuxtLink to="/events">Bekijk alle evenementen</NuxtLink>
     </section>
+
+    <section class="about__section">
+      <div>
+        <h2>Over ons</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur numquam maiores assumenda iusto obcaecati! Officia, beatae sapiente debitis rem quo doloremque atque mollitia, soluta
+          possimus officiis voluptates sed eveniet nemo cumque odio fuga consequuntur nesciunt! Commodi maiores aliquam nostrum rem labore. Modi ad ab, quis eos officia eveniet ipsam debitis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur incidunt corporis laborum tempore delectus ad aut in vitae pariatur vero expedita praesentium voluptates voluptate iste
+          rem alias error, corrupti adipisci odit velit nobis ratione. Voluptates magnam beatae repellendus vitae vel eius temporibus repellat blanditiis aut, ab fugit inventore possimus. Aspernatur
+          dolores vitae fugiat.
+        </p>
+        <NuxtLink to="/about">Lees verder</NuxtLink>
+      </div>
+      <div>
+        <img src="/about.jpg" alt="" />
+      </div>
+    </section>
   </div>
 </template>
 

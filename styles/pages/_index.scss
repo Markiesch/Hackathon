@@ -96,3 +96,34 @@
     gap: 1.5rem;
   }
 }
+
+.about__section {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  h2 {
+    font-size: $fontsize-600;
+  }
+
+  p {
+    padding-top: 1rem;
+    max-width: 110ch;
+    line-height: 1.6;
+    color: $clr-neutral-400;
+  }
+
+  a {
+    padding-top: 1rem;
+    display: inline-block;
+    color: $clr-primary-400;
+    text-decoration: underline;
+  }
+
+  img {
+    border-radius: 0.5rem;
+    height: 100%;
+    object-fit: cover;
+  }
+}
