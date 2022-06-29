@@ -3,10 +3,7 @@
     <section class="hero">
       <div>
         <h1>Samen tegen eenzaamheid</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ex tempora qui. <br />
-          Velit architecto, deserunt, autem porro, dolor provident jatoch
-        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ex tempora qui. Velit architecto, deserunt, autem porro, dolor provident jatoch</p>
         <NuxtLink to="/events" class="cta--overview">Overzicht</NuxtLink>
       </div>
       <div class="image--container">
